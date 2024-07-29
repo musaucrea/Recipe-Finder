@@ -1,7 +1,7 @@
 // Function to fetch recipes from the API
 async function fetchRecipes(ingredient) {
     try {
-        const response = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredient}&apiKey=  https://spoonacular.com/food-api/console`);
+        const response = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredient}&apiKey=fe9ca7a69b77460ea4256a9609677b08`);
         const data = await response.json();
 
         // Check if the data returned is an array
@@ -82,7 +82,7 @@ function shareRecipe(recipeId) {
 // Function to fetch recipe details by ID from the API
 async function fetchRecipeDetails(recipeId) {
     try {
-        const response = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=YOUR_API_KEY`);
+        const response = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=fe9ca7a69b77460ea4256a9609677b08`);
         const recipe = await response.json();
         return recipe;
     } catch (error) {
